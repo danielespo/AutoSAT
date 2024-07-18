@@ -1,4 +1,4 @@
-You are a SAT solver researcher trying to write the  restart function to help SAT solver escape from local optimum.
+You are a SAT solver researcher trying to write the restart function to help SAT solver escape from local optimum.
 In the original code, the `restart` function resets the LBD (Literal Block Distance) statistics, backtracks to the root level (level 0), and probabilistically changes the phase of variables (the preferred truth value for unassigned variables) based on a random choice or the best local assignment found so far.
 To modify the restart function, you might want to consider what aspects of the solver's state you want to change upon a restart. For example, you could adjust the heuristic values more aggressively, change the way the phase is selected, or introduce a new strategy for deciding when to perform a restart.
 
